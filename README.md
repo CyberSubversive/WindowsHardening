@@ -19,6 +19,7 @@ The policy files are imported using the lgpo tool released by Microsoft.  This t
 
 # Usage
 Example of importing settings from a Policy Analyzer .PolicyRules file:
+
 lgpo /p C:\path\sample.PolicyRules  
 
 # License
