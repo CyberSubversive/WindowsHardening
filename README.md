@@ -6,7 +6,7 @@ Test, test, test before you go into production.  Don't just apply these security
 The only testing I've done for you is apply them to my Windows 10 home PCs and run about a year.  Tested on a few VMs here and there.  
 
 # Overview
-These Policy Files were created from DISA group policies published at https://public.cyber.mil/stigs/gpo/
+These Policy Files were created from Defense Information Systems Agency (DISA) group policies published on the DoD Cyber Exchange at https://public.cyber.mil/stigs/gpo/
 If you do not plan to tailor the policies, it would probably be easier to download those policies from DISA and import them using the instructions found there.
 
 The files were created using the GPO2PolicyRules tool released by Microsoft.  This tool is part of the Security Compliance Toolkit.  Learn more here: https://learn.microsoft.com/en-us/windows/security/threat-protection/windows-security-configuration-framework/security-compliance-toolkit-10
