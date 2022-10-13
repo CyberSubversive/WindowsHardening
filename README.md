@@ -20,9 +20,9 @@ These policy files are useful as a fairly easy to read, portable, editable way t
 
 The policy files are imported using the lgpo tool released by Microsoft.  This tool is also part of the Security Compliance Toolkit. Download it here: https://www.microsoft.com/en-us/download/details.aspx?id=26ecf5c5-69a3-47d4-877e-49f7706ef092
 
-The GPOs contain ADD YOUR ENTERPRISE ADMINS and ADD YOUR DOMAIN ADMINS text.  Replace this text with your groups.  
-
 # Usage
+The operating system GPOs that are NOT marked local contain ADD YOUR ENTERPRISE ADMINS and ADD YOUR DOMAIN ADMINS text.  Replace this text with your groups.  But if you have AD, consider using the DISA GPO backups.  If you are doing this for a standalone computer (not in Active Directory) try using the OS policy files marked local.
+
 Example of importing settings from a .PolicyRules file:
 
 lgpo /p C:\path\sample.PolicyRules
@@ -30,8 +30,6 @@ lgpo /p C:\path\sample.PolicyRules
 Example of importing settings from all .PolicyRules file in a file path:
 
 lgpo /g C:\path\
-
-
 
 # KNOWN ISSUES
 The Windows Server 2012 R2, Windows Server 2016, and Windows Server 2019 member server GPO are configured to the most strictest setting (Local Account instead of Local account and member of Administrators group) for user right assignments values. The setting Deny access to this computer from the network must be relaxed to Local account and member of Administrators group on a system attempting to configured as member of cluster.
